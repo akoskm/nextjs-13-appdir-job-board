@@ -12,7 +12,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Structre:
+Structure:
  - `page.tsx` - landing page
  - `app/jobs/[slug]/page.tsx` - single job page
 
