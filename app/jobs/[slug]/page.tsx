@@ -1,5 +1,5 @@
+import Link from 'next/link'
 import styles from '../../page.module.css'
-
 import { getJobs } from '../../../db/data-store';
 
 interface Props {
@@ -28,7 +28,7 @@ export default async function Job({ params }: Props) {
         <div style={{ marginBottom: '50px'}}>
           {job.description}
         </div>
-        <a href={'/'}>Go Back</a>
+        <Link href={'/'}>Go Back</Link>
       </main>
     </div>
   )

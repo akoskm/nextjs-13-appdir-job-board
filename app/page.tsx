@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './page.module.css'
 import { getJobs } from '../db/data-store';
 
@@ -18,7 +19,7 @@ export default async function Home() {
                 <div>{job.description}</div>
               </div>
               <div>
-                <a href={`jobs/${job.slug}`}>View Job</a>
+                <Link href={`jobs/${job.slug}`}>View Job</Link>
               </div>
               <hr/>
             </div>
